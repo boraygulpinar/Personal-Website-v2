@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <nav className="fixed top-0 z-50 w-full transition-colors bg-transparent">
+    <nav
+      className={`fixed top-0 z-50 w-full transition-colors transition-all duration-500 ${
+        scrolled
+          ? "bg-black/90 backdrop-blur-xs border border-b-white/20"
+          : "bg-transparent "
+      }`}
+    >
       <div className="container mx-auto px-24 py-4">
         <div className="flex justify-between items-center h-8">
           <div className="flex items-center justify-center">

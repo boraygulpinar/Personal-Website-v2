@@ -4,3 +4,13 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/Gotham.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.gotham-font {
+  font-family: 'Gotham', sans-serif;
+}

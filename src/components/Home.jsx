@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import backgroundImage from "../assets/background2.jpg";
 
 const Home = () => {
@@ -11,15 +12,29 @@ const Home = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 80, backgroundColor: "#000" }}
+      animate={{ opacity: 1, x: 0, backgroundColor: "#000" }}
+      exit={{ opacity: 0, x: -80, backgroundColor: "#000" }}
+      transition={{ duration: 0.18, type: "tween", ease: "easeInOut" }}
       className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center pt-10 px-4"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundColor: "#000",
+      }}
     >
-      <h1 className="text-white text-5xl md:text-7xl font-bold mb-6 text-center max-w-xl">
+      <img
+        src={backgroundImage}
+        alt="Background"
+        className="hidden"
+        loading="lazy"
+      />
+      <h1 className="gotham-font text-white text-5xl md:text-7xl font-bold mb-6 text-center max-w-xl">
         Boray Gülpınar
       </h1>
       <p className="text-gray-300 text-lg md:text-2xl mb-8 text-center max-w-xl">
-        Full-stack developer passionate about clean code and creative solutions.
+        Full-stack developer passionate about improving himself in the software
+        world.
       </p>
       <div className="w-full max-w-2xl mx-auto flex items-center justify-center mb-8 px-4">
         <span className="flex items-center text-base md:text-lg text-gray-200 font-medium">
@@ -69,7 +84,7 @@ const Home = () => {
           <i className="fa-brands fa-square-instagram text-black text-2xl md:text-3xl"></i>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

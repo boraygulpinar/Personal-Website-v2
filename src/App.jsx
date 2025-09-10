@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -8,11 +9,11 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
-function App() {
+function AnimatedRoutes() {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
@@ -20,6 +21,15 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+    </AnimatePresence>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }
