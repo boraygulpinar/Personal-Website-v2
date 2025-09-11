@@ -98,18 +98,12 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `text-gray-400 text-sm font-medium transition-all duration-200 relative hover:text-white ${
-                    isActive
-                      ? "font-bold text-white after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-[115%] after:h-0.5 after:bg-white after:rounded"
-                      : ""
-                  }`
-                }
+              <a
+                href="mailto:boraygulpinar@gmail.com"
+                className="text-gray-400 text-sm font-medium transition-all duration-200 relative hover:text-white"
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
