@@ -1,12 +1,57 @@
-# React + Vite
+## Personal Website v2 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kendi yeteneklerimi, projelerimi ve özgeçmişimi sergilemek için geliştirdiğim modern kişisel web sitesi.
 
-Currently, two official plugins are available:
+Bu proje, ilk kişisel web sitemin geliştirilmiş ve daha modern versiyonudur.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Web Sitesi:** [boraygulpinar.com](https://www.boraygulpinar.com/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Proje Özellikleri
+
+- Modern ve minimalist tasarım (React & Tailwind CSS)
+
+- Tüm cihazlara uyumlu responsive tasarım
+
+- Yeniden kullanılabilir component yapısı
+
+- Projeler ve yetenekler için özel alanlar
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- React ⚛️
+
+- Tailwind CSS 🎨
+
+- Vite ⚡
+
+- JavaScript
+
+---
+
+## 📸 Ekran Görüntüleri
+
+### Home Page
+<img width="1912" height="910" alt="1home" src="https://github.com/user-attachments/assets/ccb53465-99e8-436b-af75-4e094f8d9cb3" />
+
+### Home Page Responsive
+<img width="321" height="604" alt="5MobileResp" src="https://github.com/user-attachments/assets/a4b9f9d6-173b-478a-bcfb-e12ea10aefe5" />
+
+### Projects Page
+<img width="1901" height="629" alt="2Projects" src="https://github.com/user-attachments/assets/ef492e63-9654-4810-8b2f-f865824c867a" />
+<img width="1297" height="737" alt="3Projects" src="https://github.com/user-attachments/assets/97fbeafe-c385-4347-84ba-26d47fad0ab7" />
+<img width="1261" height="854" alt="4Projects" src="https://github.com/user-attachments/assets/808d4825-b9b9-4878-a9ed-f13b6c0b4dbd" />
+
+### Skills Page
+<img width="1897" height="904" alt="4Skills" src="https://github.com/user-attachments/assets/050c2cd9-9f48-49bf-b9de-01124ec7b705" />
+
+---
+
+## 📬 İletişim
+
+Her türlü görüş ve öneriniz için:  
+[GitHub](https://github.com/boraygulpinar)  
+[LinkedIn](https://www.linkedin.com/in/boray-gulpinar/)
